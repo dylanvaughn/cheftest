@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Cheftest::VERSION
   spec.authors       = ["Dylan Vaughn"]
   spec.email         = ["dylancvaughn@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Gem providing rake tasks to help with chef cookbook testing}
+  spec.summary       = %q{Includes: foodcritic, knife test}
+  spec.homepage      = "https://github.com/dylanvaughn/cheftest"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -20,4 +20,10 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
+
+  spec.add_runtime_dependency 'foodcritic'
+  spec.add_runtime_dependency 'chef'
+  spec.add_runtime_dependency 'rspec'
+  spec.add_runtime_dependency 'chefspec'
+
 end
