@@ -1,6 +1,6 @@
-# Cheftest
+# ChefTest
 
-TODO: Write a gem description
+Provides easy access to several testing tools for Chef cookbooks and related code.
 
 ## Installation
 
@@ -18,7 +18,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    cheftest$ rake -T 'ct'
+    rake ct             # Run all tests
+    rake ct:foodcritic  # Run foodcritic
+    rake ct:knife       # Run knife test
+    rake ct:spec        # Run specs
 
 ## Contributing
 
